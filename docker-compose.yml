@@ -1,0 +1,18 @@
+redis:
+  image: redis
+hasher:
+  image: brutus333/hasher
+rng:
+  image: brutus333/rng
+worker:
+  image: brutus333/worker
+  links:
+  - redis:redis
+  - rng:rng
+  - hasher:hasher
+webui:
+  ports:
+  - 8000:80/tcp
+  image: brutus333/webui
+  links:
+  - redis:redis

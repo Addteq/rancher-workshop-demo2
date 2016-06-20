@@ -1,0 +1,10 @@
+redis:
+  scale: 1
+hasher:
+  scale: 2
+rng:
+  scale: 6
+worker:
+  scale: 6
+webui:
+  scale: 1
