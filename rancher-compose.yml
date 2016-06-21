@@ -1,10 +1,10 @@
 redis:
   scale: 1
 hasher:
-  scale: 2
+  scale: 1
 rng:
-  scale: 6
+  scale: 1
 worker:
-  scale: 6
+  scale: 1
 webui:
   scale: 1
