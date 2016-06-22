@@ -31,3 +31,5 @@ webui:
     io.rancher.scheduler.affinity:host_label: intention=idoeverything
   links:
   - redis:redis
+troubleshoot:
+  image: brutus333/troubleshoot
