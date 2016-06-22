@@ -1,3 +1,3 @@
 FROM ubuntu:14.04.3
 
-RUN apt-get update && apt-get install apache2-utils -y && apt-get install httping -y && apt-get clean
+RUN apt-get update && apt-get install dnsutils apache2-utils httping curl -y && apt-get clean
