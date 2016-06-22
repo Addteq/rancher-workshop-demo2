@@ -33,3 +33,5 @@ webui:
   - redis:redis
 troubleshoot:
   image: brutus333/troubleshoot
+  tty: true
+  stdin_open: true
