@@ -18,3 +18,5 @@ at multiple conferences and events like:
 - Container Solutions, Amsterdam (2016, February)
 
 The examples were adapted for Rancher environment.
+
+There are two branches with different role: master keeps compose files for one host deployment while manyhosts keeps compose files for multi-host deployment.
