@@ -1,23 +1,11 @@
 redis:
   image: redis
-  labels:
-    io.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label: intention=idoeverything
 hasher:
   image: brutus333/hasher
-  labels:
-    io.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label: intention=idoeverything
 rng:
   image: brutus333/rng
-  labels:
-    io.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label: intention=idoeverything
 worker:
   image: brutus333/worker
-  labels:
-    io.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label: intention=idoeverything
   links:
   - redis:redis
   - rng:rng
@@ -26,9 +14,6 @@ webui:
   ports:
   - 8000:80/tcp
   image: brutus333/webui
-  labels:
-    io.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label: intention=idoeverything
   links:
   - redis:redis
 troubleshoot:
